@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Laureandosi</title>
+</head>
+<body>
+  <div id="gestione-prospetti">
+    <div class="container">
+      <h1>Gestione Prospetti di Laurea</h1>
+      <div class="row">
+        <!-- Sezione sinistra: CdL e Data Laurea -->
+        <div class="left-section">
+          <div>
+            <label for="cdl">CdL:</label>
+            <select id="cdl" name="cdl" class="cdl-select">
+              <option value="">Seleziona un CdL</option>
+              <!-- Altre opzioni -->
+            </select>
+          </div>
+          <div class="date-wrapper">
+            <label for="data">Data Laurea:</label>
+            <input type="date" id="data" name="data">
+          </div>
+        </div>
+
+        <!-- Sezione centrale: Matricole -->
+        <div class="middle-section">
+          <label for="matricole">Matricole:</label>
+          <textarea id="matricole" name="matricole"></textarea>
+        </div>
+
+        <!-- Sezione destra: Bottoni e link -->
+        <div class="right-section">
+          <button id="genera" class="button">Crea Prospetti</button>
+          <a id="apri" class="open-prospetti">apri prospetti</a>
+          <button id="invia" class="button">Invia Prospetti</button>
+          <div id="prospetti-creati" class="prospetti-creati">Prospetti creati</div>
+          <div id="output"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

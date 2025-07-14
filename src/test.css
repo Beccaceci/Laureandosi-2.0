@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.container {
+    width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #E6F0F9;
+    border: 1px solid #A9B8CE;
+    border-radius: 0px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    max-width: 95%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #3982B8;
+    font-weight: bold;
+}
+
+h3 {
+    color: #3982B8;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    border-bottom: 1px solid #A9B8CE;
+    padding-bottom: 5px;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    word-wrap: break-word;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+p[style*="color: green"] {
+    font-weight: bold;
+}
+
+p[style*="color: red"] {
+    font-weight: bold;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.test-section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.pdf-links-section {
+    margin-bottom: 20px;
+}
+
+.pdf-link-row {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.separator {
+    margin: 0 10px;
+    color: #A9B8CE;
+    font-weight: bold;
+}
+
+a {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #3982B8;
+    font-weight: bold;
+    margin: 5px 0;
+    text-decoration: underline;
+}
+
+a[target="_blank"] {
+    background-color: #C5DEF5;
+    border: 1px solid #A5C6E5;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 5px 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to bottom, #D5E8F9, #B5D5F0);
+    display: inline-block;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+a[target="_blank"]:hover {
+    background-image: linear-gradient(to bottom, #C5DEF5, #7BAAD5);
+    text-decoration: none;
+}
+
+br + a, br + br {
+    margin-top: 10px;
+    display: block;
+}
+
+.container > br {
+    display: block;
+    margin: 10px 0;
+}
